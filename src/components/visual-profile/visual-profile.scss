@@ -65,6 +65,7 @@
       cursor: pointer;
       @media only screen and (max-width: 768px) {
         /* For mobile phones: */
+        align-items: center;
         height: 120px;
         width: 103px;
         
@@ -78,8 +79,7 @@
         @media only screen and (max-width: 768px) {
           /* For mobile phones: */
           flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
+          align-items: center;
           height: 120px;
           width: 103px;
         }
@@ -99,6 +99,7 @@
         margin-left: 20px;
         @media only screen and (max-width: 768px) {
           /* For mobile phones: */
+          align-items: center;
           margin-left: 0px;
         }
       }
