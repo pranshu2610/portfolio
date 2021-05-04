@@ -3,6 +3,7 @@ import visBG from '../../assets/images/vis-bg.jpg';
 import Activity from '../activity/activity';
 import { withStyles} from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
+import {InfoData} from '../../assets/data/info';
 import './visual-profile.scss'
 
 const PrettoSlider = withStyles({
@@ -38,22 +39,23 @@ const PrettoSlider = withStyles({
 
 const VisualProfile = () => {
   const [year,setYear] = useState(2021)
+  let data = InfoData[year];
   return(
     <div className="visual-bg" style={{backgroundImage: "url("+visBG+")"}}>
       <p className="year">{year}</p>
       <div className="top-lable">
-        <div className="current-job flat">
-          <Activity inactive={true}/>
+        <div className="current-job flat" onClick={()=> window.open(data.minor.url, "_blank")}>
+          <Activity icon={data.minor.img} inactive={data.minor.inactive}/>
           <div className="flat-con">
-            <p className="card-title">Wealth42 Inc</p>
-            <p className="card-sub">SDE Intern</p>
+            <p className="card-title">{data.minor.title}</p>
+            <p className="card-sub">{data.minor.sub1}</p>
           </div>
         </div>
-        <div className="current-job">
-          <Activity />
-          <p className="card-title">Wealth42 Inc</p>
-          <p className="card-sub">SDE Intern</p>
-          <p className="card-sub">Banglore</p>
+        <div className="current-job" onClick={()=> window.open(data.major.url, "_blank")}>
+          <Activity icon={data.major.img} inactive={data.major.inactive}/>
+          <p className="card-title">{data.major.title}</p>
+          <p className="card-sub">{data.major.sub1}</p>
+          <p className="card-sub">{data.major.sub2}</p>
         </div>
       </div>
       <div className="top-lable down">
