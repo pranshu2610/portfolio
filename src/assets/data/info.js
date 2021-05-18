@@ -6,14 +6,14 @@ export const InfoData =
       sub1: "B.Tech | 2018-22",
       sub2: "ECE",
       inactive: false,
-      url: "#",
+      url: null,
       img: "iiit.jpg"
     },
     minor: {
       title: "Class XII",
       sub1: "DPS Vindhyanagar",
       inactive: true,
-      url: "#",
+      url: null,
       img: "dps.jpg"
     }
   },
@@ -23,7 +23,7 @@ export const InfoData =
       sub1: "Opensource",
       sub2: "Project Euler",
       inactive: true,
-      url: "#",
+      url: null,
       img: "hacktober.jpg"
     },
     minor: {
@@ -40,7 +40,7 @@ export const InfoData =
       sub1: "SDE Intern",
       sub2: "Remote",
       inactive: false,
-      url: "#",
+      url: null,
       img: "blue.jpg"
     },
     minor: {
@@ -57,7 +57,7 @@ export const InfoData =
       sub1: "SDE Intern",
       sub2: "Remote",
       inactive: false,
-      url: "#",
+      url: null,
       img: "blue.jpg"
     },
     minor: {
