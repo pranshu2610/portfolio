@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './text-profile.scss';
 
 const imgURL = {
@@ -6,7 +6,7 @@ const imgURL = {
   "Redux": "https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/04/21032431/redux-cover-imgage-1024x768.jpg",
   "JS": "https://html5hive.org/wp-content/uploads/2014/06/js_800x800.jpg",
   "SASS": "https://engineering.icf.com/wp-content/uploads/2020/02/sass-wide-logo.png",
-  "Node": "https://lh3.googleusercontent.com/proxy/CVf9P8MwgEmgXB7PjFV1Qs9-H-R-jj_kDwqgkelRzmIqydGGRFcntrsr5kwJPlueWzhUqirzAL8TMTUDLKql9bZ03FRoveF6C26cq4z3IY8JKUtl6Ki-kWVK3dJzKODQYnnlEjXAvHIhy-W3Fik0b4tQ7zE8E2pZd-AIKRgpxaisp-eunOYpDjsiSTGEgWUSW6f-2bSL8OF3L0pHn-0",
+  "Node": "https://cdn.iconscout.com/icon/free/png-512/node-js-1-1174935.png",
   "MongoDB": "https://img.stackshare.io/service/1030/leaf-360x360.png"
 }
 const TextProfile = () => {

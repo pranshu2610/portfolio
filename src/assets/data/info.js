@@ -10,7 +10,7 @@ export const InfoData =
       img: "iiit.jpg"
     },
     minor: {
-      title: "Class XII",
+      title: "Class X & XII",
       sub1: "DPS Vindhyanagar",
       inactive: true,
       url: null,

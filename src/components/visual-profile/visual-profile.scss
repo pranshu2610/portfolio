@@ -14,7 +14,7 @@
   }
   .year {
     margin: 0;
-    margin-top: -150px;
+    margin-top: -130px;
     font-size: 150px;
     opacity: 0.1;
     z-index: -2;
@@ -81,7 +81,7 @@
       }
       &.flat {
         height: 55px;
-        width: 190px;
+        width: 200px;
         animation: shake 8s;
         animation-iteration-count: infinite;
         flex-direction: row;

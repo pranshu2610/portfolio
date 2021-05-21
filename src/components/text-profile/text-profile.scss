@@ -15,10 +15,10 @@
     align-items: flex-start;
   }
   .mainText{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     margin: 0;
-    line-height: 80px;
+    line-height: 65px;
     &.main {
       color: #52AF77;
     }
@@ -30,7 +30,7 @@
   }
   .skill-badges {
     display: flex;
-    margin-top: 20px;
+    margin-top: 25px;
     @media only screen and (max-width: 768px) {
       /* For mobile phones: */
       flex-wrap: wrap;
@@ -44,7 +44,7 @@
     width: 50px;
     margin-right: 15px;
     border-radius: 15px;
-    background-color: aqua;
+    background-color: rgb(53, 53, 53);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
