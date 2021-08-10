@@ -39,7 +39,7 @@ export const InfoData =
       title: "Wealth42 Inc",
       sub1: "SDE Intern",
       sub2: "Remote",
-      inactive: false,
+      inactive: true,
       url: null,
       img: "blue.jpg"
     },
@@ -56,7 +56,7 @@ export const InfoData =
       title: "Wealth42 Inc",
       sub1: "SDE Intern",
       sub2: "Remote",
-      inactive: false,
+      inactive: true,
       url: null,
       img: "blue.jpg"
     },
