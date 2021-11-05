@@ -6,6 +6,10 @@
   align-items: center;
   text-align: center;
   padding: 0 8%;
+  &.darkmodebg{
+    background-color: white;
+    color: black;
+  }
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     justify-content: flex-start;

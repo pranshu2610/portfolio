@@ -40,7 +40,7 @@ const PrettoSlider = withStyles({
 })(Slider);
 
 
-const VisualProfile = () => {
+const VisualProfile = ({darkmode}) => {
   const [year,setYear] = useState(2021)
   let data = InfoData[year];
   const [visible,setVisible] = useState(true);
@@ -49,10 +49,11 @@ const VisualProfile = () => {
     setTimeout(function(){ setVisible(true) }, 400);
   },[year]);
   return(
-    <div className="visual-bg" style={{backgroundImage: "url("+visBG+")"}}>
-      <p className="year">{year}</p>
+    <div className="visual-bg">
+      <p className={`year ${!darkmode?'darkmodefont':''}`}>{year}</p>
+      <img className="bgimage" src={visBG} alt="Pranshu"/>
       <div className="top-lable">
-        <div className="current-job flat" onClick={()=> {if (data.minor.url) {window.open(data.minor.url, "_blank")}}}>
+        <div className={`current-job flat ${!darkmode?'darkmodecard':''}`} onClick={()=> {if (data.minor.url) {window.open(data.minor.url, "_blank")}}}>
         <Fade opposite when={visible}>
           <Activity icon={data.minor.img} inactive={data.minor.inactive}/>
           <div className="flat-con">
@@ -61,7 +62,7 @@ const VisualProfile = () => {
           </div>
         </Fade>
         </div>
-        <div className="current-job" onClick={()=> {if (data.major.url) {window.open(data.major.url, "_blank")}}}>
+        <div className={`current-job ${!darkmode?'darkmodecard':''}`} onClick={()=> {if (data.major.url) {window.open(data.major.url, "_blank")}}}>
         <Fade opposite when={visible}>
           <Activity icon={data.major.img} inactive={data.major.inactive}/>
           <p className="card-title">{data.major.title}</p>
@@ -71,7 +72,7 @@ const VisualProfile = () => {
         </div>
       </div>
       <div className="top-lable down">
-        <div className="current-job flat-large">
+        <div className={`current-job flat-large ${!darkmode?'darkmodecard':''}`}>
           <div style={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
             <p className="card-sub">2018</p>
             <p className="card-sub">2021</p>
