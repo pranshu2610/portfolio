@@ -55,7 +55,7 @@ const VisualProfile = ({darkmode}) => {
       <div className="top-lable">
         <div className={`current-job flat ${!darkmode?'darkmodecard':''}`} onClick={()=> {if (data.minor.url) {window.open(data.minor.url, "_blank")}}}>
         <Fade opposite when={visible}>
-          <Activity icon={data.minor.img} inactive={data.minor.inactive}/>
+          <Activity darkMode={darkmode} icon={data.minor.img} inactive={data.minor.inactive}/>
           <div className="flat-con">
             <p className="card-title">{data.minor.title}</p>
             <p className="card-sub">{data.minor.sub1}</p>
@@ -64,7 +64,7 @@ const VisualProfile = ({darkmode}) => {
         </div>
         <div className={`current-job ${!darkmode?'darkmodecard':''}`} onClick={()=> {if (data.major.url) {window.open(data.major.url, "_blank")}}}>
         <Fade opposite when={visible}>
-          <Activity icon={data.major.img} inactive={data.major.inactive}/>
+          <Activity darkMode={darkmode} icon={data.major.img} inactive={data.major.inactive}/>
           <p className="card-title">{data.major.title}</p>
           <p className="card-sub">{data.major.sub1}</p>
           <p className="card-sub">{data.major.sub2}</p>

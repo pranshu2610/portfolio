@@ -18,5 +18,9 @@
     &.inactive {
       background-color: rgb(78, 78, 78);
     }
+    &.inactivedark {
+      border: rgb(126, 126, 126) 3.5px solid;
+      background-color: rgb(236, 236, 236);
+    }
   }
 }

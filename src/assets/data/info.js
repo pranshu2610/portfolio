@@ -53,12 +53,12 @@ export const InfoData =
   },
   2021: {
     major: {
-      title: "Wealth42 Inc",
+      title: "Awesome Suite",
       sub1: "SDE Intern",
       sub2: "Remote",
-      inactive: true,
+      inactive: false,
       url: null,
-      img: "blue.jpg"
+      img: "as.jpg"
     },
     minor: {
       title: "CryptoRex",
