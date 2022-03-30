@@ -7,7 +7,9 @@ const imgURL = {
   "JS": "https://html5hive.org/wp-content/uploads/2014/06/js_800x800.jpg",
   "SASS": "https://engineering.icf.com/wp-content/uploads/2020/02/sass-wide-logo.png",
   "Node": "https://cdn.iconscout.com/icon/free/png-512/node-js-1-1174935.png",
-  "MongoDB": "https://img.stackshare.io/service/1030/leaf-360x360.png"
+  "MongoDB": "https://img.stackshare.io/service/1030/leaf-360x360.png",
+  "TS": "https://iconape.com/wp-content/png_logo_vector/typescript.png",
+  "NextJS": "https://www.creative-tim.com/assets/icon-nextjs-2a1bcdd2079d47a4f10c5620632a7994b8544ca0d5e5f11049e9c542142ca82b.jpg"
 }
 const TextProfile = () => {
   return(
@@ -38,13 +40,13 @@ const TextProfile = () => {
         <div 
           className="skills" 
           style={{  
-            backgroundImage: "url(" + imgURL.Node + ")"
+            backgroundImage: "url(" + imgURL.TS + ")"
           }}
         />
         <div 
           className="skills" 
           style={{  
-            backgroundImage: "url(" + imgURL.MongoDB + ")"
+            backgroundImage: "url(" + imgURL.NextJS + ")"
           }}
         />
       </div>

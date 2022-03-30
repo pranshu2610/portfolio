@@ -41,7 +41,7 @@ const PrettoSlider = withStyles({
 
 
 const VisualProfile = ({darkmode}) => {
-  const [year,setYear] = useState(2021)
+  const [year,setYear] = useState(2022)
   let data = InfoData[year];
   const [visible,setVisible] = useState(true);
 
@@ -75,7 +75,7 @@ const VisualProfile = ({darkmode}) => {
         <div className={`current-job flat-large ${!darkmode?'darkmodecard':''}`}>
           <div style={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
             <p className="card-sub">2018</p>
-            <p className="card-sub">2021</p>
+            <p className="card-sub">2022</p>
           </div>
           <PrettoSlider 
             aria-label="pretto slider" 
@@ -83,7 +83,7 @@ const VisualProfile = ({darkmode}) => {
             onChange={(event, newValue) => {if (newValue!==year) {setVisible(false)};setYear(newValue);}}
             steps={1}
             min={2018}
-            max={2021}
+            max={2022}
           />
         </div>
       </div>

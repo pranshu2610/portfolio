@@ -40,7 +40,7 @@ export const InfoData =
       sub1: "SDE Intern",
       sub2: "Remote",
       inactive: true,
-      url: null,
+      url: "https://wealth42.com/",
       img: "blue.jpg"
     },
     minor: {
@@ -66,6 +66,23 @@ export const InfoData =
       inactive: false,
       url: "https://brave-nightingale-868297.netlify.app/",
       img: "crypto.jpg"
+    }
+  },
+  2022: {
+    major: {
+      title: "Awesome Suite",
+      sub1: "SDE Intern",
+      sub2: "Remote",
+      inactive: false,
+      url: null,
+      img: "as.jpg"
+    },
+    minor: {
+      title: "TRICX",
+      sub1: "NextJS, Typescript",
+      inactive: false,
+      url: "https://tricx.club/",
+      img: "t.png"
     }
   },
 }
