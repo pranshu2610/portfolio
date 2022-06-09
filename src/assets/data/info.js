@@ -56,15 +56,15 @@ export const InfoData =
       title: "Awesome Suite",
       sub1: "SDE Intern",
       sub2: "Remote",
-      inactive: false,
-      url: null,
+      inactive: true,
+      url: "https://www.awesomesuite.com/",
       img: "as.jpg"
     },
     minor: {
       title: "CryptoRex",
       sub1: "RaspberryPi, ReactJS",
       inactive: false,
-      url: "https://brave-nightingale-868297.netlify.app/",
+      url: "https://crypto-rex.netlify.app/",
       img: "crypto.jpg"
     }
   },
@@ -73,8 +73,8 @@ export const InfoData =
       title: "Awesome Suite",
       sub1: "SDE Intern",
       sub2: "Remote",
-      inactive: false,
-      url: null,
+      inactive: true,
+      url: "https://www.awesomesuite.com/",
       img: "as.jpg"
     },
     minor: {
